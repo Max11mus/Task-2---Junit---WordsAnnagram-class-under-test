@@ -20,9 +20,9 @@ public class App
     	 String input, output;
     	    	
     	 Menu menu = new Menu();
-    	 Anagrams anagram = new Anagrams();
+    	 AnagramsUtils anagram = new AnagramsUtils();
     	 
-    	 menu.outGreetingMsg();
+    	 menu.Greeting();
     	 
     	 System.out.println("Please, enter the text:");
     	 Scanner in = new Scanner(System.in);
@@ -32,7 +32,7 @@ public class App
     	 System.out.println("Output text: ");
     	 System.out.println(output);
     	 
-    	 menu.outFarewellMsg();
+    	 menu.Farewell();
     	 
     	 
     }
