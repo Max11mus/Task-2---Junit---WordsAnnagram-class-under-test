@@ -22,7 +22,7 @@ public class App
     	 Menu menu = new Menu();
     	 AnagramsUtils anagram = new AnagramsUtils();
     	 
-    	 menu.Greeting();
+    	 menu.greeting();
     	 
     	 System.out.println("Please, enter the text:");
     	 Scanner in = new Scanner(System.in);
@@ -32,7 +32,7 @@ public class App
     	 System.out.println("Output text: ");
     	 System.out.println(output);
     	 
-    	 menu.Farewell();
+    	 menu.farewell();
     	 
     	 
     }

@@ -2,7 +2,7 @@ package ua.com.foxminded.lms.anagrams;
 
 public class Menu {
 
-	public void Greeting () {
+	public void greeting () {
 		
 		String greetings = "\t \t \t HELLO !!! \r\n It's an "
 			+ "application that reverses all the words of input text:\r\n"
@@ -19,7 +19,7 @@ public class Menu {
 		}
 	
 
-	public void Farewell() {
+	public void farewell() {
 		
 		String farewell = "\t \t \t GOODBYE !!!"; 
 		System.out.println(farewell);
