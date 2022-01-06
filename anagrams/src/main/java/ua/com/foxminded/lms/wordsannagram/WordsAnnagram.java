@@ -1,8 +1,8 @@
-package ua.com.foxminded.lms.anagrams;
+package ua.com.foxminded.lms.wordsannagram;
 
 
 
-public final class AnagramsUtils {
+public final class WordsAnnagram {
 
 	public  String reverse(String input) {
 		
@@ -28,23 +28,29 @@ public final class AnagramsUtils {
 	
 	private  String reverseWord(String input) {
 		
+		char [] inputChars = input.toCharArray();
 		char [] resultChars = input.toCharArray();
-	    String onlyLettersReversed="";
-		
-		for (char c : resultChars) {
-			if (Character.isLetter(c)) {
-				onlyLettersReversed = c + onlyLettersReversed;
-			} 
-		}
-		
-		for (int i = 0, indexOnlyLettersReversed = 0; i < resultChars.length; i++) {
+	    	    				
+		for (int i = 0, k = (inputChars.length - 1) ; i < resultChars.length; i++) {
+			
 			char c = resultChars[i];
-			if (Character.isLetter(c)) {
-					onlyLettersReversed.getChars(indexOnlyLettersReversed, 
-					indexOnlyLettersReversed+1, resultChars, i);
-					indexOnlyLettersReversed++;
+			char d = inputChars[k];
+			
+			/* This while cycle is needed, because in input string 
+			   may be sequence of several non-letter chars
+			   So here we detecting and of such sequence */
+			while ( (!Character.isLetter(d)) && (k>=1)) {
+				k--;
+				d = inputChars[k];	
+			}
+			
+			if ( (Character.isLetter(c)) && (k>=0)) {
+				resultChars[i]=inputChars[k];
+				k--;
 			} 
+								
 		}
+				
 				
 		String result = new String(resultChars);
 		return result;

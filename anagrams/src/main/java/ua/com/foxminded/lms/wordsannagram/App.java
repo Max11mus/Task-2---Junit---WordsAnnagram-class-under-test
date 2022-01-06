@@ -1,4 +1,4 @@
-package ua.com.foxminded.lms.anagrams;
+package ua.com.foxminded.lms.wordsannagram;
 import java.util.Scanner;
 
 /**
@@ -20,7 +20,7 @@ public class App
     	 String input, output;
     	    	
     	 Menu menu = new Menu();
-    	 AnagramsUtils anagram = new AnagramsUtils();
+    	 WordsAnnagram anagram = new WordsAnnagram();
     	 
     	 menu.greeting();
     	 

@@ -1,4 +1,4 @@
-package ua.com.foxminded.lms.anagrams;
+package ua.com.foxminded.lms.wordsannagram;
 
 public class Menu {
 
