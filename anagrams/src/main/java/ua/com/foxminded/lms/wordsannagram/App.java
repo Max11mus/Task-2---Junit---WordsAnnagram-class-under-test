@@ -1,39 +1,31 @@
 package ua.com.foxminded.lms.wordsannagram;
-import java.util.Scanner;
 
-/**
- *Task 1 - Anagrams 
- *Write an application that reverses all the words of input text:
- *E.g. "abcd efgh" => "dcba hgfe"
- *All non-letter symbols should stay on the same places:
- *E.g. "a1bcd efg!h" => "d1cba hgf!e"
- *Use Latin alphabet for test only.
- */
+import java.util.Scanner;
 
 public class App 
 {
-    public static void main( String[] args )
+ 
+	public static void main( String[] args )
     {
-    
-    	
-    	 
-    	 String input, output;
-    	    	
-    	 Menu menu = new Menu();
-    	 WordsAnnagram anagram = new WordsAnnagram();
-    	 
-    	 menu.greeting();
-    	 
+		WordsAnnagram anagram = new WordsAnnagram(); 
+		Scanner in = new Scanner(System.in);
+		 
+		System.out.println( "\t \t \t HELLO !!! \r\n It's an "
+ 			+ "application that reverses all the words of input text:\r\n"
+ 			+ "\r\n"
+ 			+ "  E.g. \"abcd efgh\" => \"dcba hgfe\"\r\n"
+ 			+ "\r\n"
+ 			+ "All non-letter symbols should stay on the same places:\r\n"
+ 			+ "\r\n"
+ 			+ "  E.g. \"a1bcd efg!h\" => \"d1cba hgf!e\"\r\n"
+ 			+ "\r\n"
+ 			+ "Use Latin alphabet for test only. \r\n" );
     	 System.out.println("Please, enter the text:");
-    	 Scanner in = new Scanner(System.in);
-    	 input = in.nextLine();
+    	 String input = in.nextLine();
     	 in.close();
-    	 output = anagram.reverse(input);
-    	 System.out.println("Output text: ");
-    	 System.out.println(output);
-    	 
-    	 menu.farewell();
-    	 
-    	 
+    	 System.out.println( "Output text: " );
+       	 System.out.println( anagram.reverse(input) );
+    	 System.out.println("\t \t \t GOODBYE !!!");
     }
+
 }
