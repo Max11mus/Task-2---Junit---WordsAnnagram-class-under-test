@@ -5,8 +5,7 @@ import java.util.Scanner;
 public class App 
 {
  
-	public static void main( String[] args )
-    {
+	public static void main( String[] args ) {
 		WordsAnnagram anagram = new WordsAnnagram(); 
 		Scanner in = new Scanner(System.in);
 		 
