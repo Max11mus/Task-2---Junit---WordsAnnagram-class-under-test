@@ -5,7 +5,6 @@ package ua.com.foxminded.lms.wordsannagram;
 public final class WordsAnnagram {
 	
 	public  String reverse(String input) {
-		
 		final String DELIMITER = " ";
 		String result = "";
 		String [] words =  input.split(" ",-1);
@@ -23,7 +22,6 @@ public final class WordsAnnagram {
 
 	
 	private  String reverseWord(String input) {
-		
 		char [] inputChars = input.toCharArray();
 		char [] resultChars = input.toCharArray();
 		
