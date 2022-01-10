@@ -1,11 +1,9 @@
 package ua.com.foxminded.lms.wordsannagram;
 
-
-
 public final class WordsAnnagram {
+	public static final String DELIMITER = " ";
 	
 	public  String reverse(String input) {
-		final String DELIMITER = " ";
 		String result = "";
 		String [] words =  input.split(" ",-1);
 		
