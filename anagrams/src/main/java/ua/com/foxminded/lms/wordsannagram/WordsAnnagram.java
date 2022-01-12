@@ -3,7 +3,7 @@ package ua.com.foxminded.lms.wordsannagram;
 public final class WordsAnnagram {
 	public static final String DELIMITER = " ";
 	
-	public  String reverse(String input) {
+	public  String reverseOnlyLetters(String input) {
 		String result = "";
 		String [] words =  input.split(" ",-1);
 		

@@ -23,7 +23,7 @@ public class App
     	 String input = in.nextLine();
     	 in.close();
     	 System.out.println( "Output text: " );
-       	 System.out.println( anagram.reverse(input) );
+       	 System.out.println( anagram.reverseOnlyLetters(input) );
     	 System.out.println("\t \t \t GOODBYE !!!");
     }
 
