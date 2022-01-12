@@ -5,7 +5,7 @@ public final class WordsAnnagram {
 	
 	public  String reverseOnlyLetters(String input) {
 		String result = "";
-		String [] words =  input.split(" ",-1);
+		String [] words =  input.split(DELIMITER, -1);
 		
 		if (words.length != 0) {
 		result = reverseWord(words[0]);
