@@ -10,14 +10,14 @@ class AnagramsTest {
 	static WordsAnnagram anagram;
 
 	@BeforeAll
-	static void WordsAnnagramTestSetUp() {
+	static void wordsAnnagramTestSetUp() {
 		anagram = new WordsAnnagram();
 	}
 
 	@Test
-	void reverseOnlyLetters_throwNullPointerException_whenInputNull() {
-		assertThrows(NullPointerException.class, () -> anagram.reverseOnlyLetters(null),
-				"Must throw NullPointerException exception when input null.");
+	void reverseOnlyLetters_throwIllegalArgumentException_whenInputNull() {
+		assertThrows(IllegalArgumentException.class, () -> anagram.reverseOnlyLetters(null),
+				"Must throw IllegalArgumentException exception when input null.");
 	}
 
 	@Test

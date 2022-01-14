@@ -5,18 +5,24 @@ public final class WordsAnnagram {
 	public static final int STRING_SPLITED_COMPLETELY = -1;
 
 	public String reverseOnlyLetters(String input) {
+		if (input == null) {
+			throw new IllegalArgumentException("ERROR: Null Pointer Argument.");
+		} 
+		else
+		{
 		String result = "";
 		String[] words = input.split(DELIMITER, STRING_SPLITED_COMPLETELY);
-
-		if (words.length != 0) {
-			result = reverseWord(words[0]);
-			for (int i = 1; i < words.length; i++) {
-				words[i] = reverseWord(words[i]);
-				result = result.concat(DELIMITER);
-				result = result.concat(words[i]);
+			
+			if (words.length != 0) {
+				result = reverseWord(words[0]);
+				for (int i = 1; i < words.length; i++) {
+					words[i] = reverseWord(words[i]);
+					result = result.concat(DELIMITER);
+					result = result.concat(words[i]);
+				}
 			}
+			return result;
 		}
-		return result;
 	}
 
 	private String reverseWord(String input) {
